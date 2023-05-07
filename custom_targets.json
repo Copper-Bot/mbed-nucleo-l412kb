@@ -6,7 +6,7 @@
         "detect_code": [
             "0846"
         ],
-		"device_has_add": [
+        "device_has_add": [
             "USBDEVICE"
         ],
         "device_name": "STM32L412KBTx"
