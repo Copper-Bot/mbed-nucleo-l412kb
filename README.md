@@ -22,6 +22,19 @@ In your project root directory:
    mbed target NUCLEO_L412KB
    ```
 
+## Upload
+
+Since this board is not yet present in [mbed-os database](https://github.com/ARMmbed/mbed-os-tools/blob/master/src/mbed_os_tools/detect/platform_database.py), it must be added for `mbed compile --flash` command to work.
+
+In the root of your project, type the two following commands:
+
+```shell
+pip install mbed-ls --upgrade
+mbedls --mock 0846:NUCLEO_L412KB
+```
+
+This should add the board in your local database.
+
 ## Infos
 
 - Is `"device_name": "STM32L412KBTx"` same has `"device_name": "STM32L412KBUx"` ?
